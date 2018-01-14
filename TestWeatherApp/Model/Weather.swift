@@ -12,7 +12,7 @@ import Marshal
 class ThreeHourForecast: Unmarshaling {
     var displayTime: String
     var celsiusTemperature: Int
-    var weatherArray: [Weather]
+    var weatherArray: [Weather]?
     var windSpeed: Int
 
     required init(object: MarshaledObject) throws {
@@ -26,6 +26,12 @@ class ThreeHourForecast: Unmarshaling {
         weatherArray = try object.value(for: "weather")
         let metresPerSecond: Double = try object.value(for: "wind.speed")
         windSpeed = Int(round(metresPerSecond * 2.23694))
+    }
+    
+    init() {
+        displayTime = "a"
+        celsiusTemperature = 1
+        windSpeed = 1
     }
     
     struct Weather: Unmarshaling {

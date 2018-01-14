@@ -9,4 +9,8 @@ target 'TestWeatherApp' do
 	pod 'Marshal', '~> 1.2'
 	pod 'Alamofire', '~> 4.5'
 
+target 'TestWeatherAppTests' do
+    inherit! :complete
+end
+
 end

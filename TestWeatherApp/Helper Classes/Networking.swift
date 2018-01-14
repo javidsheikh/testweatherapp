@@ -11,7 +11,7 @@ import Alamofire
 
 class NetworkRequestHelper {
     
-    static func fetchWeatherJSONData(for location: String, errorHandler: @escaping ()-> Void, handler: @escaping (Dictionary<String, Any>) -> Void)  {
+    public func fetchWeatherJSONData(for location: String, errorHandler: @escaping ()-> Void, handler: @escaping (Dictionary<String, Any>) -> Void)  {
         Alamofire.request("http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=1be90bc9c2b4848aa703ae05ed5e5c8e").validate().responseJSON { response in
             switch response.result {
             case .success:
@@ -26,7 +26,7 @@ class NetworkRequestHelper {
         }
     }
     
-    static func fetchWeatherIcon(withCode code: String, handler: @escaping (Data) -> Void) {
+    public func fetchWeatherIcon(withCode code: String, handler: @escaping (Data) -> Void) {
         Alamofire.request("http://openweathermap.org/img/w/" + code + ".png").responseData {response in
             guard let data = response.data else {
                 return

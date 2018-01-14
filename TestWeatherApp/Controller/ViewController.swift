@@ -19,7 +19,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     lazy var geocoder = CLGeocoder()
     lazy var currentLocation = "Not found"
     lazy var displyedWeatherLocation = ""
-    
+    lazy var networkRequestHelper = NetworkRequestHelper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     }
     
     // MARK: private methods
-    private func initialiseWeatherModel(withJSONObject jsonObject: Dictionary<String, Any>) {
+    public func initialiseWeatherModel(withJSONObject jsonObject: Dictionary<String, Any>) {
         do {
             weather = try jsonObject.value(for: "list")
             tableView.reloadData()
@@ -51,7 +51,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     
     private func fetchWeatherDataFor(location: String) {
         if let encodedLocationString = location.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-            NetworkRequestHelper.fetchWeatherJSONData(for: encodedLocationString, errorHandler: {
+            networkRequestHelper.fetchWeatherJSONData(for: encodedLocationString, errorHandler: {
                 self.showErrorAlert()
             }, handler: { jsonObject in
                 self.displyedWeatherLocation = location
@@ -113,9 +113,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
             cell.descriptionLabel.text = description.capitalized
         }
         if let iconCode = weatherSnippet.weatherArray.first?.icon {
-            NetworkRequestHelper.fetchWeatherIcon(withCode: iconCode) { data in
-                let image = UIImage(data: data)
-                cell.weatherIcon.image = image
+            networkRequestHelper.fetchWeatherIcon(withCode: iconCode) { data in
+                if let image = UIImage(data: data) {
+                    cell.weatherIcon.image = image
+                }
             }
         }
         return cell
