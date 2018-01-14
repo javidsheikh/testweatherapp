@@ -10,8 +10,6 @@
 		44583CF7A3C11D620BB0720C /* Pods_TestWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748AC814F353E0F7D39BF143 /* Pods_TestWeatherApp.framework */; };
 		58A5EBA9916AFB04E0EFB1F3 /* Pods_TestWeatherApp_TestWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182C6124DCEE80803532F630 /* Pods_TestWeatherApp_TestWeatherAppTests.framework */; };
 		F94BC2C0200BE39B00741004 /* TestWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BC2BF200BE39B00741004 /* TestWeatherAppTests.swift */; };
-		F94BC2C8200BEEAA00741004 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = F94BC2C7200BEEAA00741004 /* test.json */; };
-		F94BC2C9200BEEAA00741004 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = F94BC2C7200BEEAA00741004 /* test.json */; };
 		F985D61F200AA08000D6A894 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985D61E200AA08000D6A894 /* Networking.swift */; };
 		F985D624200ACA2600D6A894 /* WeatherDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985D622200ACA2600D6A894 /* WeatherDisplayTableViewCell.swift */; };
 		F985D625200ACA2600D6A894 /* WeatherDisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F985D623200ACA2600D6A894 /* WeatherDisplayTableViewCell.xib */; };
@@ -46,7 +44,6 @@
 		F94BC2BD200BE39B00741004 /* TestWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94BC2BF200BE39B00741004 /* TestWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWeatherAppTests.swift; sourceTree = "<group>"; };
 		F94BC2C1200BE39B00741004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F94BC2C7200BEEAA00741004 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		F985D61E200AA08000D6A894 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		F985D622200ACA2600D6A894 /* WeatherDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDisplayTableViewCell.swift; sourceTree = "<group>"; };
 		F985D623200ACA2600D6A894 /* WeatherDisplayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDisplayTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				F999241B200A66C0002CD2A9 /* AppDelegate.swift */,
-				F94BC2C7200BEEAA00741004 /* test.json */,
 				F9B4A4B0200BAF1200FD9685 /* Helper Classes */,
 				F9B4A4B1200BAF2800FD9685 /* Model */,
 				F9B4A4AF200BAEF500FD9685 /* View */,
@@ -274,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94BC2C9200BEEAA00741004 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +282,6 @@
 				F985D637200B855700D6A894 /* WeatherHeaderTableViewCell.xib in Resources */,
 				F9992423200A66C0002CD2A9 /* Assets.xcassets in Resources */,
 				F9992421200A66C0002CD2A9 /* Main.storyboard in Resources */,
-				F94BC2C8200BEEAA00741004 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

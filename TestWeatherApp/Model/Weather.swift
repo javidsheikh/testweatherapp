@@ -12,7 +12,7 @@ import Marshal
 class ThreeHourForecast: Unmarshaling {
     var displayTime: String
     var celsiusTemperature: Int
-    var weatherArray: [Weather]?
+    var weatherArray: [Weather]
     var windSpeed: Int
 
     required init(object: MarshaledObject) throws {

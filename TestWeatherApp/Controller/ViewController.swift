@@ -153,7 +153,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
         }
     }
     
-    
     private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {
         if let error = error {
             print("Unable to Reverse Geocode Location (\(error))")
