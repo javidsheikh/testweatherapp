@@ -28,12 +28,6 @@ class ThreeHourForecast: Unmarshaling {
         windSpeed = Int(round(metresPerSecond * 2.23694))
     }
     
-    init() {
-        displayTime = "a"
-        celsiusTemperature = 1
-        windSpeed = 1
-    }
-    
     struct Weather: Unmarshaling {
         var main: String
         var description: String
