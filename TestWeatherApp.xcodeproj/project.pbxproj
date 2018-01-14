@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		44583CF7A3C11D620BB0720C /* Pods_TestWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748AC814F353E0F7D39BF143 /* Pods_TestWeatherApp.framework */; };
-		F985D619200AA04E00D6A894 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985D60C200AA00100D6A894 /* Alamofire.framework */; };
-		F985D61A200AA04E00D6A894 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F985D60C200AA00100D6A894 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F985D61F200AA08000D6A894 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985D61E200AA08000D6A894 /* Networking.swift */; };
 		F985D624200ACA2600D6A894 /* WeatherDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985D622200ACA2600D6A894 /* WeatherDisplayTableViewCell.swift */; };
 		F985D625200ACA2600D6A894 /* WeatherDisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F985D623200ACA2600D6A894 /* WeatherDisplayTableViewCell.xib */; };
@@ -74,28 +72,7 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		F985D61B200AA04E00D6A894 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F985D600200AA00000D6A894 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F985D61D200AA04E00D6A894 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F985D61A200AA04E00D6A894 /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		748AC814F353E0F7D39BF143 /* Pods_TestWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44583CF7A3C11D620BB0720C /* Pods_TestWeatherApp.framework in Frameworks */,
-				F985D619200AA04E00D6A894 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,12 +222,10 @@
 				F9992416200A66C0002CD2A9 /* Resources */,
 				38661FFED5CA48918151B563 /* [CP] Embed Pods Frameworks */,
 				7CF9F2199047B288628D9F29 /* [CP] Copy Pods Resources */,
-				F985D61D200AA04E00D6A894 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F985D61C200AA04E00D6A894 /* PBXTargetDependency */,
 			);
 			name = TestWeatherApp;
 			productName = TestWeatherApp;
@@ -438,14 +412,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		F985D61C200AA04E00D6A894 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Alamofire iOS";
-			targetProxy = F985D61B200AA04E00D6A894 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		F999241F200A66C0002CD2A9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -577,7 +543,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D89A29383E1A678EBC83A55C /* Pods-TestWeatherApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNNCXYWA32;
@@ -594,7 +559,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9A5A7A68BAC6EB1DE05A828 /* Pods-TestWeatherApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNNCXYWA32;
