@@ -51,11 +51,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     
     private func fetchWeatherDataFor(location: String) {
         if let encodedLocationString = location.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-            NetworkRequestHelper.fetchWeatherJSONData(for: encodedLocationString) { jsonObject in
+            NetworkRequestHelper.fetchWeatherJSONData(for: encodedLocationString, errorHandler: {
+                self.showErrorAlert()
+            }, handler: { jsonObject in
                 self.displyedWeatherLocation = location
                 self.initialiseWeatherModel(withJSONObject: jsonObject)
-            }
+            })
         }
+    }
+    
+    private func showErrorAlert() {
+        let alert = UIAlertController(title: "Error", message: "Could not find weather for that location. Please enter a valid city and try again.", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel) { _ in
+            self.tableView.reloadData()
+        }
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: weather header delegate methods

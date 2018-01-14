@@ -25,20 +25,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="609-1G-TZb">
-                        <rect key="frame" x="20" y="51.5" width="70" height="60"/>
+                        <rect key="frame" x="20" y="41" width="70" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="2LW-6I-S8e"/>
                             <constraint firstAttribute="width" constant="70" id="qOe-TD-hWe"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6r-9p-Lkq">
-                        <rect key="frame" x="184" y="72" width="42.5" height="19.5"/>
+                        <rect key="frame" x="184" y="61.5" width="42.5" height="19.5"/>
                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvD-DS-8Jd">
-                        <rect key="frame" x="346.5" y="72" width="42.5" height="19.5"/>
+                        <rect key="frame" x="346.5" y="61.5" width="42.5" height="19.5"/>
                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                     <constraint firstItem="xvD-DS-8Jd" firstAttribute="centerY" secondItem="l6r-9p-Lkq" secondAttribute="centerY" id="4IW-OT-Qiy"/>
                     <constraint firstItem="609-1G-TZb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7xa-gV-P9M"/>
                     <constraint firstItem="Jjx-Pl-0Xe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="AsD-Kk-5WW"/>
-                    <constraint firstItem="l6r-9p-Lkq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="10" id="BPn-gV-xGe"/>
+                    <constraint firstItem="l6r-9p-Lkq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BPn-gV-xGe"/>
                     <constraint firstItem="l6r-9p-Lkq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PR0-Z8-G6k"/>
                     <constraint firstAttribute="trailing" secondItem="xvD-DS-8Jd" secondAttribute="trailing" constant="20" id="PxE-6E-PGc"/>
                     <constraint firstItem="3lY-on-VMW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RIo-Kz-9Kp"/>
