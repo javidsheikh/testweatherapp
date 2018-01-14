@@ -12,6 +12,7 @@ import Marshal
 class ThreeHourForecast: Unmarshaling {
     var displayTime: String
     var celsiusTemperature: Int
+    var humidity: Int
     var weatherArray: [Weather]
     var windSpeed: Int
 
@@ -19,10 +20,11 @@ class ThreeHourForecast: Unmarshaling {
         let timeString: String = try object.value(for: "dt_txt")
         let day = DateHelper.getDayFor(date: timeString)
         let date = DateHelper.reverseDateStringFormat(from: timeString)
-        let time = timeString.suffix(8)
+        let time = timeString.suffix(8) + " UTC"
         displayTime = "\(day) \(date) \(time)"
         let kelvinTemp: Double = try object.value(for: "main.temp")
         celsiusTemperature = Int(round(kelvinTemp - 273.15))
+        humidity = try object.value(for: "main.humidity")
         weatherArray = try object.value(for: "weather")
         let metresPerSecond: Double = try object.value(for: "wind.speed")
         windSpeed = Int(round(metresPerSecond * 2.23694))

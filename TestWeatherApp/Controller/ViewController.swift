@@ -108,7 +108,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
         let weatherSnippet = weather[indexPath.row]
         cell.timeLabel.text = weatherSnippet.displayTime
         cell.temperatureLabel.text = "\(weatherSnippet.celsiusTemperature)°C"
-        cell.windSpeedLabel.text = "\(weatherSnippet.windSpeed) mph"
+        cell.windSpeedLabel.text = "Wind: \(weatherSnippet.windSpeed)mph"
+        cell.humidityLabel.text = "Humidity: \(weatherSnippet.humidity)%"
         if let description = weatherSnippet.weatherArray.first?.description {
             cell.descriptionLabel.text = description.capitalized
         }
