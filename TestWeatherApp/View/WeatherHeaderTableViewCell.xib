@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="163" id="KGk-i7-Jjw" customClass="WeatherHeaderTableViewCell" customModule="TestWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWN-9x-U2c">
+                        <rect key="frame" x="20" y="20" width="132.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showing Weather For:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-Q7-43S">
+                        <rect key="frame" x="20" y="124" width="168" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Tn-wEz">
+                        <rect key="frame" x="302" y="20" width="40" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-2T-t5K">
+                        <rect key="frame" x="302" y="123.5" width="40" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSm-zS-C2G">
+                        <rect key="frame" x="20" y="86" width="150" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="0sv-yl-37i"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-0l-2A3">
+                        <rect key="frame" x="225" y="87.5" width="117" height="27"/>
+                        <color key="backgroundColor" red="0.41966566991527898" green="0.42023370640541047" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                        <state key="normal" title="Get 5-Day Forecast">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="getForecast:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="I2U-eK-aaA"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASx-dz-K4K">
+                        <rect key="frame" x="79" y="46.5" width="204" height="27"/>
+                        <color key="backgroundColor" red="0.41966566989999998" green="0.42023370640000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                        <state key="normal" title="Get Forecast For Current Location">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="getForecastForCurrentLocation:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aix-Tq-Hk2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0085546710134000465" blue="0.53157383419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="ASx-dz-K4K" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="031-ri-trn"/>
+                    <constraint firstItem="jSm-zS-C2G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0yY-kN-9q0"/>
+                    <constraint firstItem="NL4-Q7-43S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1qI-Hb-Hcs"/>
+                    <constraint firstItem="Gg9-0l-2A3" firstAttribute="centerY" secondItem="jSm-zS-C2G" secondAttribute="centerY" id="6Xg-IH-hie"/>
+                    <constraint firstAttribute="trailing" secondItem="DK4-2T-t5K" secondAttribute="trailing" constant="20" id="Ohr-mw-W5R"/>
+                    <constraint firstItem="iWN-9x-U2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Pm5-Rk-zW2"/>
+                    <constraint firstAttribute="trailing" secondItem="B5g-Tn-wEz" secondAttribute="trailing" constant="20" id="Sco-4I-8qU"/>
+                    <constraint firstItem="DK4-2T-t5K" firstAttribute="centerY" secondItem="NL4-Q7-43S" secondAttribute="centerY" id="dEd-va-dHf"/>
+                    <constraint firstItem="B5g-Tn-wEz" firstAttribute="centerY" secondItem="iWN-9x-U2c" secondAttribute="centerY" id="dS6-xu-F2V"/>
+                    <constraint firstItem="NL4-Q7-43S" firstAttribute="top" secondItem="jSm-zS-C2G" secondAttribute="bottom" constant="8" id="e6x-oJ-jyi"/>
+                    <constraint firstAttribute="trailing" secondItem="Gg9-0l-2A3" secondAttribute="trailing" constant="20" id="ezi-ac-3Qx"/>
+                    <constraint firstItem="iWN-9x-U2c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sxf-TB-EDD"/>
+                    <constraint firstAttribute="bottom" secondItem="NL4-Q7-43S" secondAttribute="bottom" constant="20" id="y7w-mt-HMJ"/>
+                    <constraint firstItem="ASx-dz-K4K" firstAttribute="top" secondItem="iWN-9x-U2c" secondAttribute="bottom" constant="8" id="yqc-Yg-XVq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currentLocationLabel" destination="B5g-Tn-wEz" id="Tp9-gv-ce3"/>
+                <outlet property="displayedWeatherLocationLabel" destination="DK4-2T-t5K" id="E4R-v1-rmM"/>
+                <outlet property="newLocationTextField" destination="jSm-zS-C2G" id="iO6-gx-U3p"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="111.5"/>
+        </tableViewCell>
+    </objects>
+</document>
