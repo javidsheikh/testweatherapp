@@ -12,4 +12,4 @@ Forecasts for other cities can be loaded by entering a city in the text field an
 * Customise layouts for different device sizes.
 * Handle location services denied.
 * Handle current location not found.
-* Adjust time for each period by timezone.
+* Adjust time for each period by timezone - currently all times are displayed in UTC regardless of location.
